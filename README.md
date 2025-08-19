@@ -8,6 +8,8 @@ Este servicio implementa un servidor HTTP básico desarrollado completamente en 
 
 El servidor web maneja solicitudes HTTP GET y POST, el get pide una información al usuario (nombre) y el post cambia esa información con una nueva. Además acepta contenido desde el disco local (HTML, CSS, JavaScript, imágenes) y proporciona una API REST para demostrar la comunicación asíncrona entre cliente y servidor.
 
+# Arquitectura cliente-servidor
+
 ## Instalación
 
 ### Requisitos previos
@@ -55,6 +57,7 @@ http://localhost:35000
 - Procesa requests HTTP de forma secuencial (no concurrente)
 
 **Estructura del servidor:**
+
 ![](https://github.com/hakki17/AREP-taller1/blob/main/img/1.png)
 ![](https://github.com/hakki17/AREP-taller1/blob/main/img/2.png)
 
