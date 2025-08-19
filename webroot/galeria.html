@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Mi Servidor Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Imágenes</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h2>Imágenes servidas desde el servidor</h2>
+            <p>Estas imágenes son servidas directamente desde el disco local por nuestro servidor Java.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/web-development.jpg" alt="Desarrollo web" loading="lazy">
+                    <h3>Desarrollo Web</h3>
+                    <p>Tecnologías modernas de desarrollo web</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/java-logo.png" alt="Logo de Java" loading="lazy">
+                    <h3>Java</h3>
+                    <p>Lenguaje de programación Java</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/server.jpg" alt="Servidor" loading="lazy">
+                    <h3>Servidor</h3>
+                    <p>Infraestructura de servidores</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/rest-api.png" alt="API REST" loading="lazy">
+                    <h3>REST API</h3>
+                    <p>Servicios web RESTful</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-loader">
+            <h3>Carga dinámica de imágenes</h3>
+            <button onclick="loadRandomImage()">Cargar imagen aleatoria</button>
+            <div id="dynamicImage" class="dynamic-image-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Servidor Web Java. Galería de imágenes estáticas.</p>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
